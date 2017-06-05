@@ -8,7 +8,7 @@ const eventEmitter = new NativeEventEmitter(RNBackgroundFetch)
 
 const BackgroundTask: BackgroundTaskInterface = {
 
-  register: function(task, {} = {}) {
+  register: function(task, options = {}) {
     // Cancel existing tasks
     RNBackgroundFetch.stop()
 
